@@ -1,10 +1,16 @@
 import { VStack, Input, Stack, Icon, Pressable, Heading  } from 'native-base';
+import { useNavigation } from '@react-navigation/native';
 
 import { Button } from '../components/Button';
 import { useState } from 'react'
 import { MaterialIcons } from '@expo/vector-icons'
 import { Entypo } from '@expo/vector-icons';
+
+
+
 export function SignUp(){
+
+    const { navigate } = useNavigation()
 
     const [show, setShow] = useState();
 
@@ -56,7 +62,8 @@ export function SignUp(){
             </Stack>
 
             <Button
-                title="Logar"   
+                title="Logar"
+                onPress={() => navigate('Home')}  
             />
 
         </VStack>

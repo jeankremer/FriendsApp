@@ -1,5 +1,6 @@
 import { VStack, Input, Stack, Icon, Pressable, Heading  } from 'native-base';
 import { useNavigation } from '@react-navigation/native';
+import 'react-native-gesture-handler';
 
 import { Button } from '../components/Button';
 import { useState } from 'react'
@@ -18,7 +19,7 @@ export function SignUp(){
     return(
         <VStack 
             flex={1}
-            bgColor="success.900"
+            bgColor="yellow.400"
             px={10}
             justifyContent="center"
         >
@@ -27,25 +28,25 @@ export function SignUp(){
             <Heading
                 mb={5}
                 textAlign="center"
-                color="success.100"
+                color="yellow.900"
             >
-                Açucar Refinado
+                Cerveja Barata
             </Heading>
 
             <Stack space={4} w="100%" alignItems="center" mb={5}>
                 
                 <Input
                     borderRadius={20}
-                    borderColor="success.300"
+                    borderColor="yellow.900"
                     
                     w={{    
                         base: "75%",
                         md: "25%"
-                    }} InputLeftElement={<Icon as={<MaterialIcons name="person" />} size={5} ml="2" color="black" />} placeholder="Name" placeholderTextColor="white" fontSize="sm" 
+                    }} InputLeftElement={<Icon as={<MaterialIcons name="person" />} size={5} ml="2" color="black" />} placeholder="Name" placeholderTextColor="yellow.900" fontSize="sm" 
                 />
                 
                 <Input 
-                borderColor="success.300"
+                borderColor="yellow.900"
                 borderRadius={20}
                 w={{
                     base: "75%",
@@ -56,7 +57,7 @@ export function SignUp(){
                         <Icon as={<MaterialIcons name={show ? "visibility" : "visibility-off"} />} size={5} mr="2" color="black" />
                     </Pressable>} 
                         placeholder="Password" 
-                        placeholderTextColor="white" 
+                        placeholderTextColor="yellow.900" 
                         fontSize="sm"       
                     />
             </Stack>

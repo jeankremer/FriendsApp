@@ -8,11 +8,11 @@ export function Button({title, ...rest}: Props){
     return(
         <ButtonNativeBase
             borderRadius={20}
-            bgColor="success.500"
+            bgColor="yellow.900"
             w="75%"
             alignSelf="center"
             _pressed={{
-                bgColor: 'success.700'
+                bgColor: 'yellow.600'
                 
             }}
 
